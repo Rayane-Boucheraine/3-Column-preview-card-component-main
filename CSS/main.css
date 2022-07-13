@@ -1,0 +1,136 @@
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 15px;
+    background-color: var(--Verylightgray);
+}
+.parent {
+    background-color: var(--Verylightgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img {
+    margin: 20px 0;
+}
+.one,
+.two,
+.three {
+    padding: 20px;
+}
+.one {
+    background-color: var(--Brightorange);
+}
+.two {
+    background-color: var(--Darkcyan);
+}
+.three {
+    background-color: var(--Verydarkcyan);
+    
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Verylightgray);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+p,
+a {
+    font-family: 'Lexend Deca', sans-serif;
+}
+p {
+    color: var(--Transparentwhite);
+    margin-bottom: 60px;
+    font-size: 15px;
+}
+a {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    width: 70%;
+    background-color: var(--Verylightgray);
+    border-radius: 20px;
+    padding: 10px;
+}
+.aaa {
+    color: var(--Brightorange);
+}
+.hhh {
+    color: var(--Darkcyan);
+}
+.jjj {
+    color: var(--Verydarkcyan);
+}
+@media (max-width: 375px) {
+    .parent {
+        display: grid;
+        grid-template-rows: repeat(3, 450px);
+        padding: 30px;
+    }
+    .one,
+    .two,
+    .three {
+        padding: 45px;
+    }
+    img {
+        margin: 0;
+    }
+    h1 {
+        margin: 20px 0;
+    }
+    .one {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .three {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    p {
+        line-height: 2;
+    }
+    a {
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 376px) {
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 280px);
+    }
+    .one,
+    .two,
+    .three {
+        padding: 35px;
+        line-height: 1.6;
+    }
+    .one {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .three {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    h1 {
+        font-size: 35px;
+        margin-top: 0;
+    }
+    img {
+        margin-top: 5px;
+    }
+    p {
+        margin-bottom: 90px;
+    }
+}
